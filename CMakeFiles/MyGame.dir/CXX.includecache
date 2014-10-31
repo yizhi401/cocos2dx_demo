@@ -6,35 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/peter/mygit/cocos2dx_demo/Classes/AppDelegate.cpp
-AppDelegate.h
-/home/peter/mygit/cocos2dx_demo/Classes/AppDelegate.h
-HelloWorldScene.h
-/home/peter/mygit/cocos2dx_demo/Classes/HelloWorldScene.h
-
-/home/peter/mygit/cocos2dx_demo/Classes/AppDelegate.h
-cocos2d.h
-/home/peter/mygit/cocos2dx_demo/Classes/cocos2d.h
-
 /home/peter/mygit/cocos2dx_demo/Classes/HelloWorldScene.cpp
 HelloWorldScene.h
 /home/peter/mygit/cocos2dx_demo/Classes/HelloWorldScene.h
+iostream
+-
 
 /home/peter/mygit/cocos2dx_demo/Classes/HelloWorldScene.h
 cocos2d.h
 /home/peter/mygit/cocos2dx_demo/Classes/cocos2d.h
-
-/home/peter/mygit/cocos2dx_demo/proj.linux/main.cpp
-../Classes/AppDelegate.h
-/home/peter/mygit/cocos2dx_demo/Classes/AppDelegate.h
-stdlib.h
--
-stdio.h
--
-unistd.h
--
-string
--
 
 /usr/local/include/GLFW/glfw3.h
 stddef.h
