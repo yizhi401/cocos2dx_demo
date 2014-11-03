@@ -5,8 +5,31 @@
       <df name="Classes">
         <in>AppDelegate.cpp</in>
         <in>HelloWorldScene.cpp</in>
+        <in>MainScene.cpp</in>
+        <in>MainScene.h</in>
+        <in>newmain.cpp</in>
+      </df>
+      <df name="CMakeFiles">
+        <df name="2.8.12.2">
+          <df name="CompilerIdC">
+            <in>CMakeCCompilerId.c</in>
+          </df>
+          <df name="CompilerIdCXX">
+            <in>CMakeCXXCompilerId.cpp</in>
+          </df>
+        </df>
       </df>
       <df name="cocos2d">
+        <df name="build">
+          <df name="wp8">
+            <df name="Cocos2dShaderCompiler">
+              <in>App.xaml.cpp</in>
+              <in>DirectXPage.xaml.cpp</in>
+              <in>ShaderCompiler.cpp</in>
+              <in>pch.cpp</in>
+            </df>
+          </df>
+        </df>
         <df name="cocos">
           <df name="2d">
             <in>CCAction.cpp</in>
@@ -98,15 +121,67 @@
             <in>CCSprite3DMaterial.cpp</in>
           </df>
           <df name="audio">
+            <df name="android">
+              <df name="jni">
+                <in>cddandroidAndroidJavaEngine.cpp</in>
+              </df>
+              <in>AudioEngine-inl.cpp</in>
+              <in>ccdandroidUtils.cpp</in>
+              <in>cddSimpleAudioEngine.cpp</in>
+            </df>
+            <df name="apple">
+              <in>AudioCache.mm</in>
+              <in>AudioEngine-inl.mm</in>
+              <in>AudioPlayer.mm</in>
+            </df>
+            <df name="ios">
+              <in>CDAudioManager.m</in>
+              <in>CDOpenALSupport.m</in>
+              <in>CocosDenshion.m</in>
+              <in>SimpleAudioEngine.mm</in>
+              <in>SimpleAudioEngine_objc.m</in>
+            </df>
             <df name="linux">
               <in>FmodAudioPlayer.cpp</in>
               <in>SimpleAudioEngineFMOD.cpp</in>
             </df>
+            <df name="mac">
+              <in>CDAudioManager.m</in>
+              <in>CDOpenALSupport.m</in>
+              <in>CDXMacOSXSupport.mm</in>
+              <in>CocosDenshion.m</in>
+              <in>SimpleAudioEngine.mm</in>
+              <in>SimpleAudioEngine_objc.m</in>
+            </df>
+            <df name="openal">
+              <in>OpenALDecoder.cpp</in>
+              <in>SimpleAudioEngineOpenAL.cpp</in>
+            </df>
+            <df name="win32">
+              <in>AudioCache.cpp</in>
+              <in>AudioEngine-win32.cpp</in>
+              <in>AudioPlayer.cpp</in>
+              <in>MciPlayer.cpp</in>
+              <in>SimpleAudioEngine.cpp</in>
+            </df>
+            <df name="winrt">
+              <in>Audio.cpp</in>
+              <in>MediaStreamer.cpp</in>
+              <in>SimpleAudioEngine.cpp</in>
+            </df>
+            <df name="wp8">
+              <in>Audio.cpp</in>
+              <in>MediaStreamer.cpp</in>
+              <in>SimpleAudioEngine.cpp</in>
+            </df>
+            <in>AudioEngine.cpp</in>
           </df>
           <df name="base">
             <in>CCAutoreleasePool.cpp</in>
             <in>CCConfiguration.cpp</in>
             <in>CCConsole.cpp</in>
+            <in>CCController-android.cpp</in>
+            <in>CCController-iOS.mm</in>
             <in>CCController.cpp</in>
             <in>CCData.cpp</in>
             <in>CCDataVisitor.cpp</in>
@@ -135,6 +210,8 @@
             <in>CCScheduler.cpp</in>
             <in>CCScriptSupport.cpp</in>
             <in>CCTouch.cpp</in>
+            <in>CCUserDefault-android.cpp</in>
+            <in>CCUserDefault-apple.mm</in>
             <in>CCUserDefault.cpp</in>
             <in>CCValue.cpp</in>
             <in>ObjectFactory.cpp</in>
@@ -190,6 +267,7 @@
                 <in>CCActionTimeline.cpp</in>
                 <in>CCActionTimelineCache.cpp</in>
                 <in>CCFrame.cpp</in>
+                <in>CCNodeReader.cpp</in>
                 <in>CCTimeLine.cpp</in>
                 <in>CSLoader.cpp</in>
               </df>
@@ -337,8 +415,41 @@
             <in>CCPhysicsWorld.cpp</in>
           </df>
           <df name="platform">
+            <df name="android">
+              <df name="jni">
+                <in>DPIJni.cpp</in>
+                <in>IMEJni.cpp</in>
+                <in>Java_org_cocos2dx_lib_Cocos2dxAccelerometer.cpp</in>
+                <in>Java_org_cocos2dx_lib_Cocos2dxBitmap.cpp</in>
+                <in>Java_org_cocos2dx_lib_Cocos2dxHelper.cpp</in>
+                <in>Java_org_cocos2dx_lib_Cocos2dxRenderer.cpp</in>
+                <in>JniHelper.cpp</in>
+                <in>TouchesJni.cpp</in>
+              </df>
+              <in>CCApplication-android.cpp</in>
+              <in>CCCommon-android.cpp</in>
+              <in>CCDevice-android.cpp</in>
+              <in>CCFileUtils-android.cpp</in>
+              <in>CCGLViewImpl-android.cpp</in>
+              <in>javaactivity-android.cpp</in>
+            </df>
+            <df name="apple">
+              <in>CCFileUtils-apple.mm</in>
+              <in>CCLock-apple.cpp</in>
+              <in>CCThread-apple.mm</in>
+            </df>
             <df name="desktop">
               <in>CCGLViewImpl-desktop.cpp</in>
+            </df>
+            <df name="ios">
+              <in>CCApplication-ios.mm</in>
+              <in>CCCommon-ios.mm</in>
+              <in>CCDevice-ios.mm</in>
+              <in>CCDirectorCaller-ios.mm</in>
+              <in>CCEAGLView-ios.mm</in>
+              <in>CCES2Renderer-ios.m</in>
+              <in>CCGLViewImpl-ios.mm</in>
+              <in>CCImage-ios.mm</in>
             </df>
             <df name="linux">
               <in>CCApplication-linux.cpp</in>
@@ -346,6 +457,50 @@
               <in>CCDevice-linux.cpp</in>
               <in>CCFileUtils-linux.cpp</in>
               <in>CCStdC-linux.cpp</in>
+            </df>
+            <df name="mac">
+              <in>CCApplication-mac.mm</in>
+              <in>CCCommon-mac.mm</in>
+              <in>CCDevice-mac.mm</in>
+            </df>
+            <df name="win32">
+              <in>CCApplication-win32.cpp</in>
+              <in>CCCommon-win32.cpp</in>
+              <in>CCDevice-win32.cpp</in>
+              <in>CCFileUtils-win32.cpp</in>
+              <in>CCStdC-win32.cpp</in>
+            </df>
+            <df name="winrt">
+              <in>CCApplication.cpp</in>
+              <in>CCCommon.cpp</in>
+              <in>CCDevice.cpp</in>
+              <in>CCFileUtilsWinRT.cpp</in>
+              <in>CCFreeTypeFont.cpp</in>
+              <in>CCGLViewImpl-winrt.cpp</in>
+              <in>CCGLViewImpl.cpp</in>
+              <in>CCPThreadWinRT.cpp</in>
+              <in>CCPrecompiledShaders.cpp</in>
+              <in>CCStdC.cpp</in>
+              <in>CCWinRTUtils.cpp</in>
+              <in>DirectXBase.cpp</in>
+              <in>InputEvent.cpp</in>
+              <in>inet_ntop_winrt.cpp</in>
+              <in>pch.cpp</in>
+              <in>sha1.cpp</in>
+            </df>
+            <df name="wp8">
+              <in>CCGLViewImpl-wp8.cpp</in>
+              <in>Direct3DBase.cpp</in>
+              <in>DirectXBase.cpp</in>
+            </df>
+            <df name="wp8-xaml">
+              <df name="cpp">
+                <in>Cocos2dRenderer.cpp</in>
+                <in>Direct3DContentProvider.cpp</in>
+                <in>Direct3DInterop.cpp</in>
+                <in>DirectXBase.cpp</in>
+                <in>EditBoxEvent.cpp</in>
+              </df>
             </df>
             <in>CCFileUtils.cpp</in>
             <in>CCGLView.cpp</in>
@@ -376,10 +531,21 @@
             <in>ccGLStateCache.cpp</in>
             <in>ccShaders.cpp</in>
           </df>
+          <df name="storage">
+            <df name="local-storage">
+              <in>LocalStorage-android.cpp</in>
+              <in>LocalStorage.cpp</in>
+            </df>
+          </df>
           <df name="ui">
             <df name="UIEditBox">
               <in>UIEditBox.cpp</in>
+              <in>UIEditBoxImpl-android.cpp</in>
+              <in>UIEditBoxImpl-ios.mm</in>
+              <in>UIEditBoxImpl-mac.mm</in>
               <in>UIEditBoxImpl-stub.cpp</in>
+              <in>UIEditBoxImpl-win32.cpp</in>
+              <in>UIEditBoxImpl-wp8.cpp</in>
             </df>
             <in>CocosGUI.cpp</in>
             <in>UIButton.cpp</in>
@@ -405,7 +571,12 @@
             <in>UITextBMFont.cpp</in>
             <in>UITextField.cpp</in>
             <in>UIVBox.cpp</in>
+            <in>UIVideoPlayer-android.cpp</in>
+            <in>UIVideoPlayer-ios.mm</in>
             <in>UIWebView.cpp</in>
+            <in>UIWebView.mm</in>
+            <in>UIWebViewImpl-android.cpp</in>
+            <in>UIWebViewImpl-ios.mm</in>
             <in>UIWidget.cpp</in>
           </df>
           <in>cocos2d.cpp</in>
@@ -443,6 +614,7 @@
             <in>CCPhysicsDebugNode.cpp</in>
             <in>CCPhysicsSprite.cpp</in>
           </df>
+          <in>ExtensionDeprecated.cpp</in>
         </df>
         <df name="external">
           <df name="Box2D">
@@ -514,6 +686,32 @@
           <df name="edtaa3func">
             <in>edtaa3func.cpp</in>
           </df>
+          <df name="protobuf-lite">
+            <df name="src">
+              <df name="google">
+                <df name="protobuf">
+                  <df name="io">
+                    <in>coded_stream.cc</in>
+                    <in>zero_copy_stream.cc</in>
+                    <in>zero_copy_stream_impl.cc</in>
+                    <in>zero_copy_stream_impl_lite.cc</in>
+                  </df>
+                  <df name="stubs">
+                    <in>atomicops_internals_x86_gcc.cc</in>
+                    <in>atomicops_internals_x86_msvc.cc</in>
+                    <in>common.cc</in>
+                    <in>once.cc</in>
+                    <in>stringprintf.cc</in>
+                  </df>
+                  <in>extension_set.cc</in>
+                  <in>generated_message_util.cc</in>
+                  <in>message_lite.cc</in>
+                  <in>repeated_field.cc</in>
+                  <in>wire_format_lite.cc</in>
+                </df>
+              </df>
+            </df>
+          </df>
           <df name="tinyxml2">
             <in>tinyxml2.cpp</in>
           </df>
@@ -522,13 +720,228 @@
             <in>ioapi_mem.cpp</in>
             <in>unzip.cpp</in>
           </df>
+          <df name="websockets">
+            <df name="include">
+              <df name="winrt_8.1">
+                <df name="win32helpers">
+                  <in>getopt.c</in>
+                  <in>getopt_long.c</in>
+                  <in>gettimeofday.c</in>
+                  <in>websock-w32.c</in>
+                </df>
+              </df>
+              <df name="wp8">
+                <df name="win32helpers">
+                  <in>getopt.c</in>
+                  <in>getopt_long.c</in>
+                  <in>gettimeofday.c</in>
+                  <in>websock-w32.c</in>
+                </df>
+              </df>
+              <df name="wp_8.1">
+                <df name="win32helpers">
+                  <in>getopt.c</in>
+                  <in>getopt_long.c</in>
+                  <in>gettimeofday.c</in>
+                  <in>websock-w32.c</in>
+                </df>
+              </df>
+            </df>
+          </df>
           <df name="xxhash">
             <in>xxhash.c</in>
           </df>
+          <df name="xxtea">
+            <in>xxtea.cpp</in>
+          </df>
+        </df>
+        <df name="plugin">
+          <df name="jsbindings">
+            <df name="auto">
+              <in>jsb_cocos2dx_pluginx_auto.cpp</in>
+            </df>
+            <df name="manual">
+              <in>jsb_pluginx_basic_conversions.cpp</in>
+              <in>jsb_pluginx_extension_registration.cpp</in>
+              <in>jsb_pluginx_manual_callback.cpp</in>
+              <in>jsb_pluginx_manual_protocols.cpp</in>
+              <in>jsb_pluginx_spidermonkey_specifics.cpp</in>
+              <in>pluginxUTF8.cpp</in>
+            </df>
+          </df>
+          <df name="luabindings">
+            <df name="auto">
+              <in>lua_cocos2dx_pluginx_auto.cpp</in>
+            </df>
+            <df name="manual">
+              <in>lua_pluginx_basic_conversions.cpp</in>
+              <in>lua_pluginx_manual_callback.cpp</in>
+              <in>lua_pluginx_manual_protocols.cpp</in>
+            </df>
+          </df>
+          <df name="plugins">
+            <df name="admob">
+              <df name="proj.ios">
+                <in>AdsAdmob.m</in>
+              </df>
+            </df>
+            <df name="facebook">
+              <df name="proj.ios">
+                <df name="PluginFacebook">
+                  <in>ShareFacebook.m</in>
+                  <in>UserFacebook.m</in>
+                </df>
+              </df>
+            </df>
+            <df name="facebookads">
+              <df name="proj.ios">
+                <df name="PluginFacebookAds">
+                  <in>AdsFacebook.m</in>
+                </df>
+              </df>
+            </df>
+            <df name="flurry">
+              <df name="proj.ios">
+                <in>AdsFlurry.m</in>
+                <in>AnalyticsFlurry.m</in>
+              </df>
+            </df>
+            <df name="iosiap">
+              <df name="proj.ios">
+                <df name="IOSIAP">
+                  <in>IOSIAP.m</in>
+                </df>
+              </df>
+            </df>
+            <df name="twitter">
+              <df name="proj.ios">
+                <df name="FHSTwitterEngine">
+                  <df name="OAuthConsumer">
+                    <df name="Categories">
+                      <in>NSString+URLEncoding.m</in>
+                    </df>
+                    <df name="Crytpo">
+                      <in>Base64TranscoderFHS.c</in>
+                    </df>
+                    <in>OAConsumer.m</in>
+                    <in>OAHMAC_SHA1SignatureProvider.m</in>
+                    <in>OAMutableURLRequest.m</in>
+                    <in>OARequestParameter.m</in>
+                    <in>OAServiceTicket.m</in>
+                    <in>OAToken.m</in>
+                  </df>
+                  <in>FHSTwitterEngine.m</in>
+                </df>
+                <in>ShareTwitter.m</in>
+              </df>
+            </df>
+            <df name="umeng">
+              <df name="proj.ios">
+                <in>AnalyticsUmeng.m</in>
+              </df>
+            </df>
+            <df name="weibo">
+              <df name="proj.ios">
+                <df name="JSONKit">
+                  <in>JSONKit.m</in>
+                </df>
+                <df name="SinaWeibo">
+                  <in>SinaWeibo.m</in>
+                  <in>SinaWeiboAuthorizeView.m</in>
+                  <in>SinaWeiboRequest.m</in>
+                </df>
+                <in>ShareWeibo.m</in>
+              </df>
+            </df>
+          </df>
+          <df name="protocols">
+            <df name="platform">
+              <df name="android">
+                <in>AgentManager.cpp</in>
+                <in>FacebookAgent.cpp</in>
+                <in>PluginFactory.cpp</in>
+                <in>PluginJniHelper.cpp</in>
+                <in>PluginProtocol.cpp</in>
+                <in>PluginUtils.cpp</in>
+                <in>ProtocolAds.cpp</in>
+                <in>ProtocolAnalytics.cpp</in>
+                <in>ProtocolIAP.cpp</in>
+                <in>ProtocolShare.cpp</in>
+                <in>ProtocolSocial.cpp</in>
+                <in>ProtocolUser.cpp</in>
+              </df>
+              <df name="ios">
+                <in>AdsWrapper.mm</in>
+                <in>AgentManager.mm</in>
+                <in>FacebookAgent.mm</in>
+                <in>IAPWrapper.mm</in>
+                <in>ParseUtils.m</in>
+                <in>PluginFactory.mm</in>
+                <in>PluginProtocol.mm</in>
+                <in>PluginUtilsIOS.mm</in>
+                <in>ProtocolAds.mm</in>
+                <in>ProtocolAnalytics.mm</in>
+                <in>ProtocolIAP.mm</in>
+                <in>ProtocolShare.mm</in>
+                <in>ProtocolSocial.mm</in>
+                <in>ProtocolUser.mm</in>
+                <in>ShareWrapper.mm</in>
+                <in>SocialWrapper.mm</in>
+                <in>UserWrapper.mm</in>
+                <in>iOSIAPAgent.mm</in>
+              </df>
+            </df>
+            <in>PluginManager.cpp</in>
+            <in>PluginParam.cpp</in>
+          </df>
+        </df>
+      </df>
+      <df name="linux-build">
+        <df name="CMakeFiles">
+          <df name="2.8.12.2">
+            <df name="CompilerIdC">
+              <in>CMakeCCompilerId.c</in>
+            </df>
+            <df name="CompilerIdCXX">
+              <in>CMakeCXXCompilerId.cpp</in>
+            </df>
+          </df>
+        </df>
+      </df>
+      <df name="proj.android">
+        <df name="jni">
+          <df name="hellocpp">
+            <in>main.cpp</in>
+          </df>
+        </df>
+      </df>
+      <df name="proj.ios_mac">
+        <df name="ios">
+          <in>AppController.mm</in>
+          <in>RootViewController.mm</in>
+          <in>main.m</in>
+        </df>
+        <df name="mac">
+          <in>main.cpp</in>
         </df>
       </df>
       <df name="proj.linux">
         <in>main.cpp</in>
+      </df>
+      <df name="proj.win32">
+        <in>main.cpp</in>
+      </df>
+      <df name="proj.wp8-xaml">
+        <df name="AppComponent">
+          <df name="src">
+            <in>Cocos2dRenderer.cpp</in>
+            <in>Direct3DContentProvider.cpp</in>
+            <in>Direct3DInterop.cpp</in>
+            <in>DirectXBase.cpp</in>
+            <in>EditBoxEvent.cpp</in>
+            <in>pch.cpp</in>
+          </df>
+        </df>
       </df>
     </df>
     <logicalFolder name="ExternalFiles"
@@ -551,10 +964,6 @@
         <dependencyChecking>false</dependencyChecking>
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
-      <flagsDictionary>
-        <element flagsID="0" commonFlags="-std=c++11"/>
-        <element flagsID="1" commonFlags="-std=c99 -g"/>
-      </flagsDictionary>
       <codeAssistance>
       </codeAssistance>
       <makefileType>
@@ -630,6 +1039,12 @@
       <item path="Classes/AppDelegate.cpp" ex="false" tool="1" flavor2="8">
       </item>
       <item path="Classes/HelloWorldScene.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+      <item path="Classes/MainScene.cpp" ex="false" tool="1" flavor2="9">
+      </item>
+      <item path="Classes/MainScene.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Classes/newmain.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="cocos2d/cocos/2d/CCAction.cpp" ex="false" tool="1" flavor2="8">
       </item>
@@ -2432,6 +2847,2931 @@
         </ccTool>
       </folder>
       <item path="proj.linux/main.cpp" ex="false" tool="1" flavor2="8">
+      </item>
+    </conf>
+    <conf name="NewConfiguration" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-std=c++11"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE}</buildCommand>
+          <cleanCommand>${MAKE} clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="Classes/AppDelegate.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/local/include/GLFW</pElem>
+            <pElem>/usr/include/GLFW</pElem>
+            <pElem>cocos2d</pElem>
+            <pElem>cocos2d/cocos</pElem>
+            <pElem>cocos2d/cocos/audio/include</pElem>
+            <pElem>cocos2d/cocos/platform</pElem>
+            <pElem>cocos2d/cocos/platform/desktop</pElem>
+            <pElem>cocos2d/cocos/platform/linux</pElem>
+            <pElem>cocos2d/cocos/editor-support</pElem>
+            <pElem>cocos2d/extensions</pElem>
+            <pElem>cocos2d/external</pElem>
+            <pElem>cocos2d/external/edtaa3func</pElem>
+            <pElem>cocos2d/external/chipmunk/include/chipmunk</pElem>
+            <pElem>cocos2d/external/jpeg/include/linux</pElem>
+            <pElem>cocos2d/external/tiff/include/linux</pElem>
+            <pElem>cocos2d/external/webp/include/linux</pElem>
+            <pElem>cocos2d/external/tinyxml2</pElem>
+            <pElem>cocos2d/external/unzip</pElem>
+            <pElem>cocos2d/external/freetype2/include/linux</pElem>
+            <pElem>cocos2d/external/websockets/include/linux</pElem>
+            <pElem>cocos2d/external/spidermonkey/include/linux</pElem>
+            <pElem>cocos2d/external/linux-specific/fmod/include/64-bit</pElem>
+            <pElem>cocos2d/external/xxhash</pElem>
+            <pElem>.</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>COCOS2D_DEBUG=1</Elem>
+            <Elem>LINUX</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="Classes/HelloWorldScene.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/local/include/GLFW</pElem>
+            <pElem>/usr/include/GLFW</pElem>
+            <pElem>cocos2d</pElem>
+            <pElem>cocos2d/cocos</pElem>
+            <pElem>cocos2d/cocos/audio/include</pElem>
+            <pElem>cocos2d/cocos/platform</pElem>
+            <pElem>cocos2d/cocos/platform/desktop</pElem>
+            <pElem>cocos2d/cocos/platform/linux</pElem>
+            <pElem>cocos2d/cocos/editor-support</pElem>
+            <pElem>cocos2d/extensions</pElem>
+            <pElem>cocos2d/external</pElem>
+            <pElem>cocos2d/external/edtaa3func</pElem>
+            <pElem>cocos2d/external/chipmunk/include/chipmunk</pElem>
+            <pElem>cocos2d/external/jpeg/include/linux</pElem>
+            <pElem>cocos2d/external/tiff/include/linux</pElem>
+            <pElem>cocos2d/external/webp/include/linux</pElem>
+            <pElem>cocos2d/external/tinyxml2</pElem>
+            <pElem>cocos2d/external/unzip</pElem>
+            <pElem>cocos2d/external/freetype2/include/linux</pElem>
+            <pElem>cocos2d/external/websockets/include/linux</pElem>
+            <pElem>cocos2d/external/spidermonkey/include/linux</pElem>
+            <pElem>cocos2d/external/linux-specific/fmod/include/64-bit</pElem>
+            <pElem>cocos2d/external/xxhash</pElem>
+            <pElem>.</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>COCOS2D_DEBUG=1</Elem>
+            <Elem>LINUX</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="Classes/MainScene.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool>
+          <incDir>
+            <pElem>/usr/local/include/GLFW</pElem>
+            <pElem>/usr/include/GLFW</pElem>
+            <pElem>cocos2d</pElem>
+            <pElem>cocos2d/cocos</pElem>
+            <pElem>cocos2d/cocos/audio/include</pElem>
+            <pElem>cocos2d/cocos/platform</pElem>
+            <pElem>cocos2d/cocos/platform/desktop</pElem>
+            <pElem>cocos2d/cocos/platform/linux</pElem>
+            <pElem>cocos2d/cocos/editor-support</pElem>
+            <pElem>cocos2d/extensions</pElem>
+            <pElem>cocos2d/external</pElem>
+            <pElem>cocos2d/external/edtaa3func</pElem>
+            <pElem>cocos2d/external/chipmunk/include/chipmunk</pElem>
+            <pElem>cocos2d/external/jpeg/include/linux</pElem>
+            <pElem>cocos2d/external/tiff/include/linux</pElem>
+            <pElem>cocos2d/external/webp/include/linux</pElem>
+            <pElem>cocos2d/external/tinyxml2</pElem>
+            <pElem>cocos2d/external/unzip</pElem>
+            <pElem>cocos2d/external/freetype2/include/linux</pElem>
+            <pElem>cocos2d/external/websockets/include/linux</pElem>
+            <pElem>cocos2d/external/spidermonkey/include/linux</pElem>
+            <pElem>cocos2d/external/linux-specific/fmod/include/64-bit</pElem>
+            <pElem>cocos2d/external/xxhash</pElem>
+            <pElem>.</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>COCOS2D_DEBUG=1</Elem>
+            <Elem>LINUX</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="Classes/newmain.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/build/wp8/Cocos2dShaderCompiler/App.xaml.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/build/wp8/Cocos2dShaderCompiler/DirectXPage.xaml.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/build/wp8/Cocos2dShaderCompiler/ShaderCompiler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/build/wp8/Cocos2dShaderCompiler/pch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCAction.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionCamera.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionCatmullRom.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionEase.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionGrid.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionGrid3D.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionInstant.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionInterval.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionPageTurn3D.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionProgressTimer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionTiledGrid.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCActionTween.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCAnimation.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCAnimationCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCAtlasNode.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCCamera.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCClippingNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCClippingRectangleNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCComponent.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCComponentContainer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCDrawNode.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCDrawingPrimitives.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCFastTMXLayer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCFastTMXTiledMap.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCFont.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCFontAtlas.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCFontAtlasCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCFontCharMap.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCFontFNT.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCFontFreeType.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCGLBufferedNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCGrabber.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCGrid.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCLabel.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCLabelAtlas.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCLabelBMFont.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCLabelTTF.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCLabelTextFormatter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCLayer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCLight.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCMenu.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCMenuItem.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCMotionStreak.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCNode.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCNodeGrid.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCParallaxNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCParticleBatchNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCParticleExamples.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCParticleSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCParticleSystemQuad.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCProgressTimer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCProtectedNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCRenderTexture.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCScene.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCSprite.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCSpriteBatchNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCSpriteFrame.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCSpriteFrameCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCTMXLayer.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCTMXObjectGroup.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCTMXTiledMap.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCTMXXMLParser.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCTextFieldTTF.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCTileMapAtlas.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCTransition.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCTransitionPageTurn.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCTransitionProgress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/2d/CCTweenFunction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCAABB.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCAnimate3D.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCAnimation3D.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCAttachNode.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCBillBoard.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCBundle3D.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCBundleReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCMesh.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCMeshSkin.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCMeshVertexIndexData.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCOBB.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCObjLoader.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCRay.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCSkeleton3D.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCSprite3D.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/3d/CCSprite3DMaterial.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/AudioEngine.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/android/AudioEngine-inl.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/android/ccdandroidUtils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/android/cddSimpleAudioEngine.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/android/jni/cddandroidAndroidJavaEngine.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/apple/AudioCache.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/apple/AudioEngine-inl.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/apple/AudioPlayer.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/ios/CDAudioManager.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/audio/ios/CDOpenALSupport.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/audio/ios/CocosDenshion.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/audio/ios/SimpleAudioEngine.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/ios/SimpleAudioEngine_objc.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/audio/linux/FmodAudioPlayer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/linux/SimpleAudioEngineFMOD.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/mac/CDAudioManager.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/audio/mac/CDOpenALSupport.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/audio/mac/CDXMacOSXSupport.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/mac/CocosDenshion.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/audio/mac/SimpleAudioEngine.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/mac/SimpleAudioEngine_objc.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/audio/openal/OpenALDecoder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/openal/SimpleAudioEngineOpenAL.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/win32/AudioCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/win32/AudioEngine-win32.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/win32/AudioPlayer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/win32/MciPlayer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/win32/SimpleAudioEngine.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/winrt/Audio.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/winrt/MediaStreamer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/winrt/SimpleAudioEngine.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/wp8/Audio.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/wp8/MediaStreamer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/audio/wp8/SimpleAudioEngine.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCAutoreleasePool.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCConfiguration.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCConsole.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCController-android.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCController-iOS.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCController.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCData.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCDataVisitor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCDirector.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEvent.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventAcceleration.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventController.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventCustom.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventDispatcher.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventFocus.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventKeyboard.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListener.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListenerAcceleration.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListenerController.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListenerCustom.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListenerFocus.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListenerKeyboard.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListenerMouse.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventListenerTouch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventMouse.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCEventTouch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCIMEDispatcher.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCNS.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCProfiling.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCRef.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCScheduler.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCScriptSupport.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCTouch.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCUserDefault-android.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCUserDefault-apple.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCUserDefault.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/CCValue.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/ObjectFactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/TGAlib.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/ZipUtils.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/atitc.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/base64.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/ccCArray.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/ccFPSImages.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/base/ccRandom.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/ccTypes.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/ccUTF8.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/ccUtils.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/etc1.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/pvr.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/base/s3tc.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/cocos2d.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/deprecated/CCArray.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/deprecated/CCDeprecated.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/deprecated/CCDictionary.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/deprecated/CCNotificationCenter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/deprecated/CCSet.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/deprecated/CCString.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCBAnimationManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCBFileLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCBKeyframe.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCBReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCBSequence.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCBSequenceProperty.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCControlButtonLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCControlLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCLabelBMFontLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCLabelTTFLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCLayerColorLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCLayerGradientLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCLayerLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCMenuItemImageLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCMenuItemLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCNode+CCBRelativePositioning.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCNodeLoaderLibrary.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCParticleSystemQuadLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCScale9SpriteLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCScrollViewLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocosbuilder/CCSpriteLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCActionTimeline.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCActionTimelineCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCFrame.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCNodeReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CCTimeLine.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/ActionTimeline/CSLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCActionFrame.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCActionFrameEasing.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCActionManagerEx.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCActionNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCActionObject.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCArmature.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCArmatureAnimation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCArmatureDataManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCArmatureDefine.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCBatchNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCBone.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCColliderDetector.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCComAttribute.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCComAudio.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCComController.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCComRender.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCDataReaderHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCDatas.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCDecorativeDisplay.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCDisplayFactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCDisplayManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCInputDelegate.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCProcessBase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCSGUIReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCSSceneReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCSkin.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCSpriteFrameCacheHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCTransformHelp.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCTween.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CCUtilMath.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CSParseBinary.pb.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/CocoLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/DictionaryHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/TriggerBase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/TriggerMng.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/TriggerObj.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/ButtonReader/ButtonReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/CheckBoxReader/CheckBoxReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/ImageViewReader/ImageViewReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/LayoutReader/LayoutReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/ListViewReader/ListViewReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/LoadingBarReader/LoadingBarReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/PageViewReader/PageViewReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/ScrollViewReader/ScrollViewReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/SliderReader/SliderReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextAtlasReader/TextAtlasReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextBMFontReader/TextBMFontReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextFieldReader/TextFieldReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextReader/TextReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/cocostudio/WidgetReader/WidgetReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Animation.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/AnimationState.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/AnimationStateData.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Atlas.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/AtlasAttachmentLoader.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Attachment.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/AttachmentLoader.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Bone.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/BoneData.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/BoundingBoxAttachment.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Event.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/EventData.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/IkConstraint.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/IkConstraintData.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Json.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/MeshAttachment.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/PolygonBatch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/RegionAttachment.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Skeleton.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/SkeletonAnimation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/SkeletonBounds.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/SkeletonData.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/SkeletonJson.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/SkeletonRenderer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Skin.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/SkinnedMeshAttachment.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/Slot.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/SlotData.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/extension.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/editor-support/spine/spine-cocos2dx.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/math/CCAffineTransform.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/math/CCGeometry.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/math/CCVertex.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/math/Mat4.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/math/MathUtil.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/math/Quaternion.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/math/TransformUtils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/math/Vec2.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/math/Vec3.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/math/Vec4.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/network/HttpClient.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/network/SocketIO.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/network/WebSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/physics/CCPhysicsBody.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/physics/CCPhysicsContact.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/physics/CCPhysicsJoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/physics/CCPhysicsShape.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/physics/CCPhysicsWorld.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/physics/chipmunk/CCPhysicsBodyInfo_chipmunk.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/physics/chipmunk/CCPhysicsContactInfo_chipmunk.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/physics/chipmunk/CCPhysicsJointInfo_chipmunk.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/physics/chipmunk/CCPhysicsShapeInfo_chipmunk.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/physics/chipmunk/CCPhysicsWorldInfo_chipmunk.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/CCFileUtils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/CCGLView.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/CCImage.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/CCSAXParser.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/CCThread.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/android/CCApplication-android.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/android/CCCommon-android.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/android/CCDevice-android.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/android/CCFileUtils-android.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/android/CCGLViewImpl-android.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/android/javaactivity-android.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/android/jni/DPIJni.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/android/jni/IMEJni.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxAccelerometer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxBitmap.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxRenderer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/android/jni/JniHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/android/jni/TouchesJni.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/apple/CCFileUtils-apple.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/apple/CCLock-apple.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/apple/CCThread-apple.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/desktop/CCGLViewImpl-desktop.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/ios/CCApplication-ios.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/ios/CCCommon-ios.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/ios/CCDevice-ios.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/ios/CCDirectorCaller-ios.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/ios/CCEAGLView-ios.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/ios/CCES2Renderer-ios.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/cocos/platform/ios/CCGLViewImpl-ios.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/ios/CCImage-ios.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/linux/CCApplication-linux.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/linux/CCCommon-linux.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/linux/CCDevice-linux.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/linux/CCFileUtils-linux.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/linux/CCStdC-linux.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/mac/CCApplication-mac.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/mac/CCCommon-mac.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/mac/CCDevice-mac.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/win32/CCApplication-win32.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/win32/CCCommon-win32.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/win32/CCDevice-win32.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/win32/CCFileUtils-win32.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/win32/CCStdC-win32.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/CCApplication.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/CCCommon.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/CCDevice.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/CCFileUtilsWinRT.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/CCFreeTypeFont.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/CCGLViewImpl-winrt.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/CCGLViewImpl.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/CCPThreadWinRT.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/CCPrecompiledShaders.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/CCStdC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/CCWinRTUtils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/DirectXBase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/InputEvent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/inet_ntop_winrt.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/pch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/winrt/sha1.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/wp8-xaml/cpp/Cocos2dRenderer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/wp8-xaml/cpp/Direct3DContentProvider.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/wp8-xaml/cpp/Direct3DInterop.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/wp8-xaml/cpp/DirectXBase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/wp8-xaml/cpp/EditBoxEvent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/wp8/CCGLViewImpl-wp8.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/wp8/Direct3DBase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/platform/wp8/DirectXBase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCBatchCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCCustomCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCGLProgram.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCGLProgramCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCGLProgramState.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCGLProgramStateCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCGroupCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCMeshCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCPrimitive.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCPrimitiveCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCQuadCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCRenderCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCRenderer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCTexture2D.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCTextureAtlas.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCTextureCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCTrianglesCommand.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCVertexIndexBuffer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/CCVertexIndexData.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/ccGLStateCache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/renderer/ccShaders.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/storage/local-storage/LocalStorage-android.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/storage/local-storage/LocalStorage.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/CocosGUI.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIButton.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UICheckBox.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIDeprecated.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIEditBox/UIEditBox.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-android.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-ios.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-mac.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-stub.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-win32.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIEditBox/UIEditBoxImpl-wp8.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIHBox.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIHelper.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIImageView.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UILayout.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UILayoutComponent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UILayoutManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UILayoutParameter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIListView.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UILoadingBar.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIPageView.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIRelativeBox.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIRichText.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIScale9Sprite.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIScrollView.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UISlider.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIText.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UITextAtlas.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UITextBMFont.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UITextField.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIVBox.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIVideoPlayer-android.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIVideoPlayer-ios.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIWebView.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIWebView.mm" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIWebViewImpl-android.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIWebViewImpl-ios.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/cocos/ui/UIWidget.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/ExtensionDeprecated.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControl.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlButton.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlColourPicker.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlHuePicker.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlPotentiometer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlSaturationBrightnessPicker.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlSlider.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlStepper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlSwitch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCControlUtils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/GUI/CCControlExtension/CCInvocation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/GUI/CCScrollView/CCScrollView.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/GUI/CCScrollView/CCTableView.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/GUI/CCScrollView/CCTableViewCell.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/assets-manager/AssetsManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/assets-manager/AssetsManagerEx.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/assets-manager/CCEventAssetsManagerEx.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/assets-manager/CCEventListenerAssetsManagerEx.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/assets-manager/Downloader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/assets-manager/Manifest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/physics-nodes/CCPhysicsDebugNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/extensions/physics-nodes/CCPhysicsSprite.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Collision/Shapes/b2ChainShape.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Collision/Shapes/b2CircleShape.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Collision/Shapes/b2EdgeShape.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Collision/Shapes/b2PolygonShape.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Collision/b2BroadPhase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Collision/b2CollideCircle.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Collision/b2CollideEdge.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Collision/b2CollidePolygon.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Collision/b2Collision.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Collision/b2Distance.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Collision/b2DynamicTree.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Collision/b2TimeOfImpact.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Common/b2BlockAllocator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Common/b2Draw.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Common/b2Math.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Common/b2Settings.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Common/b2StackAllocator.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Common/b2Timer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Contacts/b2CircleContact.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Contacts/b2Contact.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Contacts/b2ContactSolver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Contacts/b2PolygonContact.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Joints/b2DistanceJoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Joints/b2FrictionJoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Joints/b2GearJoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Joints/b2Joint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Joints/b2MotorJoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Joints/b2MouseJoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Joints/b2PrismaticJoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Joints/b2PulleyJoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Joints/b2RevoluteJoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Joints/b2RopeJoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Joints/b2WeldJoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/Joints/b2WheelJoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/b2Body.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/b2ContactManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/b2Fixture.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/b2Island.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/b2World.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Dynamics/b2WorldCallbacks.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/Box2D/Rope/b2Rope.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/ConvertUTF/ConvertUTF.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/external/ConvertUTF/ConvertUTFWrapper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/edtaa3func/edtaa3func.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/protobuf-lite/src/google/protobuf/extension_set.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/protobuf-lite/src/google/protobuf/generated_message_util.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/protobuf-lite/src/google/protobuf/io/coded_stream.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/protobuf-lite/src/google/protobuf/io/zero_copy_stream.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/protobuf-lite/src/google/protobuf/io/zero_copy_stream_impl.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/protobuf-lite/src/google/protobuf/io/zero_copy_stream_impl_lite.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/protobuf-lite/src/google/protobuf/message_lite.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/protobuf-lite/src/google/protobuf/repeated_field.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/protobuf-lite/src/google/protobuf/stubs/atomicops_internals_x86_gcc.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/protobuf-lite/src/google/protobuf/stubs/atomicops_internals_x86_msvc.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/protobuf-lite/src/google/protobuf/stubs/common.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/protobuf-lite/src/google/protobuf/stubs/once.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/protobuf-lite/src/google/protobuf/stubs/stringprintf.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/protobuf-lite/src/google/protobuf/wire_format_lite.cc"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/tinyxml2/tinyxml2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/unzip/ioapi.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/external/unzip/ioapi_mem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/external/unzip/unzip.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/external/websockets/include/winrt_8.1/win32helpers/getopt.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/external/websockets/include/winrt_8.1/win32helpers/getopt_long.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/external/websockets/include/winrt_8.1/win32helpers/gettimeofday.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/external/websockets/include/winrt_8.1/win32helpers/websock-w32.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/external/websockets/include/wp8/win32helpers/getopt.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/external/websockets/include/wp8/win32helpers/getopt_long.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/external/websockets/include/wp8/win32helpers/gettimeofday.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/external/websockets/include/wp8/win32helpers/websock-w32.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/external/websockets/include/wp_8.1/win32helpers/getopt.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/external/websockets/include/wp_8.1/win32helpers/getopt_long.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/external/websockets/include/wp_8.1/win32helpers/gettimeofday.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/external/websockets/include/wp_8.1/win32helpers/websock-w32.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/external/xxhash/xxhash.c" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="cocos2d/external/xxtea/xxtea.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/jsbindings/auto/jsb_cocos2dx_pluginx_auto.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/jsbindings/manual/jsb_pluginx_basic_conversions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/jsbindings/manual/jsb_pluginx_extension_registration.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/jsbindings/manual/jsb_pluginx_manual_callback.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/jsbindings/manual/jsb_pluginx_manual_protocols.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/jsbindings/manual/jsb_pluginx_spidermonkey_specifics.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/jsbindings/manual/pluginxUTF8.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/luabindings/auto/lua_cocos2dx_pluginx_auto.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/luabindings/manual/lua_pluginx_basic_conversions.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/luabindings/manual/lua_pluginx_manual_callback.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/luabindings/manual/lua_pluginx_manual_protocols.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/plugins/admob/proj.ios/AdsAdmob.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/facebook/proj.ios/PluginFacebook/ShareFacebook.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/facebook/proj.ios/PluginFacebook/UserFacebook.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/facebookads/proj.ios/PluginFacebookAds/AdsFacebook.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/flurry/proj.ios/AdsFlurry.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/flurry/proj.ios/AnalyticsFlurry.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/iosiap/proj.ios/IOSIAP/IOSIAP.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/twitter/proj.ios/FHSTwitterEngine/FHSTwitterEngine.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/twitter/proj.ios/FHSTwitterEngine/OAuthConsumer/Categories/NSString+URLEncoding.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/twitter/proj.ios/FHSTwitterEngine/OAuthConsumer/Crytpo/Base64TranscoderFHS.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/twitter/proj.ios/FHSTwitterEngine/OAuthConsumer/OAConsumer.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/twitter/proj.ios/FHSTwitterEngine/OAuthConsumer/OAHMAC_SHA1SignatureProvider.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/twitter/proj.ios/FHSTwitterEngine/OAuthConsumer/OAMutableURLRequest.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/twitter/proj.ios/FHSTwitterEngine/OAuthConsumer/OARequestParameter.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/twitter/proj.ios/FHSTwitterEngine/OAuthConsumer/OAServiceTicket.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/twitter/proj.ios/FHSTwitterEngine/OAuthConsumer/OAToken.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/twitter/proj.ios/ShareTwitter.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/umeng/proj.ios/AnalyticsUmeng.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/weibo/proj.ios/JSONKit/JSONKit.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/weibo/proj.ios/ShareWeibo.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/weibo/proj.ios/SinaWeibo/SinaWeibo.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/weibo/proj.ios/SinaWeibo/SinaWeiboAuthorizeView.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/plugins/weibo/proj.ios/SinaWeibo/SinaWeiboRequest.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/protocols/PluginManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/PluginParam.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/android/AgentManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/android/FacebookAgent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/android/PluginFactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/android/PluginJniHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/android/PluginProtocol.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/android/PluginUtils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/android/ProtocolAds.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/android/ProtocolAnalytics.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/android/ProtocolIAP.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/android/ProtocolShare.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/android/ProtocolSocial.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/android/ProtocolUser.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/AdsWrapper.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/AgentManager.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/FacebookAgent.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/IAPWrapper.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/ParseUtils.m"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/PluginFactory.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/PluginProtocol.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/PluginUtilsIOS.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/ProtocolAds.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/ProtocolAnalytics.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/ProtocolIAP.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/ProtocolShare.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/ProtocolSocial.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/ProtocolUser.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/ShareWrapper.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/SocialWrapper.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/UserWrapper.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="cocos2d/plugin/protocols/platform/ios/iOSIAPAgent.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="linux-build/CMakeFiles/2.8.12.2/CompilerIdC/CMakeCCompilerId.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+      </item>
+      <item path="linux-build/CMakeFiles/2.8.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="proj.android/jni/hellocpp/main.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="proj.ios_mac/ios/AppController.mm" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="proj.ios_mac/ios/RootViewController.mm"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="proj.ios_mac/ios/main.m" ex="false" tool="0" flavor2="2">
+      </item>
+      <item path="proj.ios_mac/mac/main.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="proj.linux/main.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="proj.win32/main.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="proj.wp8-xaml/AppComponent/src/Cocos2dRenderer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="proj.wp8-xaml/AppComponent/src/Direct3DContentProvider.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="proj.wp8-xaml/AppComponent/src/Direct3DInterop.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="proj.wp8-xaml/AppComponent/src/DirectXBase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="proj.wp8-xaml/AppComponent/src/EditBoxEvent.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="proj.wp8-xaml/AppComponent/src/pch.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
       </item>
     </conf>
   </confs>

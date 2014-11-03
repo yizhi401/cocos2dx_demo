@@ -226,6 +226,30 @@ Classes/AppDelegate.cpp.s:
 	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.s
 .PHONY : Classes/AppDelegate.cpp.s
 
+Classes/GameLvlChoose.o: Classes/GameLvlChoose.cpp.o
+.PHONY : Classes/GameLvlChoose.o
+
+# target to build an object file
+Classes/GameLvlChoose.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o
+.PHONY : Classes/GameLvlChoose.cpp.o
+
+Classes/GameLvlChoose.i: Classes/GameLvlChoose.cpp.i
+.PHONY : Classes/GameLvlChoose.i
+
+# target to preprocess a source file
+Classes/GameLvlChoose.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.i
+.PHONY : Classes/GameLvlChoose.cpp.i
+
+Classes/GameLvlChoose.s: Classes/GameLvlChoose.cpp.s
+.PHONY : Classes/GameLvlChoose.s
+
+# target to generate assembly for a file
+Classes/GameLvlChoose.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.s
+.PHONY : Classes/GameLvlChoose.cpp.s
+
 Classes/HelloWorldScene.o: Classes/HelloWorldScene.cpp.o
 .PHONY : Classes/HelloWorldScene.o
 
@@ -249,6 +273,30 @@ Classes/HelloWorldScene.s: Classes/HelloWorldScene.cpp.s
 Classes/HelloWorldScene.cpp.s:
 	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.s
 .PHONY : Classes/HelloWorldScene.cpp.s
+
+Classes/MainScene.o: Classes/MainScene.cpp.o
+.PHONY : Classes/MainScene.o
+
+# target to build an object file
+Classes/MainScene.cpp.o:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o
+.PHONY : Classes/MainScene.cpp.o
+
+Classes/MainScene.i: Classes/MainScene.cpp.i
+.PHONY : Classes/MainScene.i
+
+# target to preprocess a source file
+Classes/MainScene.cpp.i:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/MainScene.cpp.i
+.PHONY : Classes/MainScene.cpp.i
+
+Classes/MainScene.s: Classes/MainScene.cpp.s
+.PHONY : Classes/MainScene.s
+
+# target to generate assembly for a file
+Classes/MainScene.cpp.s:
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/MainScene.cpp.s
+.PHONY : Classes/MainScene.cpp.s
 
 proj.linux/main.o: proj.linux/main.cpp.o
 .PHONY : proj.linux/main.o
@@ -293,9 +341,15 @@ help:
 	@echo "... Classes/AppDelegate.o"
 	@echo "... Classes/AppDelegate.i"
 	@echo "... Classes/AppDelegate.s"
+	@echo "... Classes/GameLvlChoose.o"
+	@echo "... Classes/GameLvlChoose.i"
+	@echo "... Classes/GameLvlChoose.s"
 	@echo "... Classes/HelloWorldScene.o"
 	@echo "... Classes/HelloWorldScene.i"
 	@echo "... Classes/HelloWorldScene.s"
+	@echo "... Classes/MainScene.o"
+	@echo "... Classes/MainScene.i"
+	@echo "... Classes/MainScene.s"
 	@echo "... proj.linux/main.o"
 	@echo "... proj.linux/main.i"
 	@echo "... proj.linux/main.s"

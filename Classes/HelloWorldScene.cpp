@@ -46,7 +46,7 @@ bool HelloWorld::init()
                                 origin.y + closeItem->getContentSize().height/2));
 
     // create menu, it's an autorelease object
-    auto menu = Menu::create(closeItem, NULL);
+    auto menu = Menu::create(closeItem, nullptr);
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
 
@@ -69,7 +69,7 @@ bool HelloWorld::init()
 
     // add the label as a child to this layer
     this->addChild(label, 1);
-    this->addChild(subTitle,0);
+    this->addChild(subTitle,1);
 
     // add "HelloWorld" splash screen"
     auto sprite = Sprite::create("HelloWorld.png");
@@ -77,13 +77,13 @@ bool HelloWorld::init()
     // position the sprite on the center of the screen
     sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
 
-    auto backgroundSprite = Sprite::create("background.jpg");
+    auto backgroundSprite = Sprite::create("nice_pic.jpg");
     // add the sprite as a child to this layer
 //    this->addChild(sprite, 0);
 //    backgroundSprite->setPosition(Vec2(visibleSize.width/2 + origin.x,visibleSize.height/2+origin.y));
 //    backgroundSprite->setContentSize(Size(visibleSize.width,visibleSize.height));
     backgroundSprite->setPosition(Vec2(visibleSize/2) + origin);
-    this->addChild(backgroundSprite);
+    this->addChild(backgroundSprite,0);
     return true;
 }
 
