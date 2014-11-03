@@ -6,15 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/peter/mygit/cocos2dx_demo/Classes/HelloWorldScene.cpp
-HelloWorldScene.h
-/home/peter/mygit/cocos2dx_demo/Classes/HelloWorldScene.h
-iostream
--
-
-/home/peter/mygit/cocos2dx_demo/Classes/HelloWorldScene.h
+/home/peter/mygit/cocos2dx_demo/Classes/GameLvlChoose.h
 cocos2d.h
 /home/peter/mygit/cocos2dx_demo/Classes/cocos2d.h
+
+/home/peter/mygit/cocos2dx_demo/Classes/MainScene.cpp
+MainScene.h
+/home/peter/mygit/cocos2dx_demo/Classes/MainScene.h
+
+/home/peter/mygit/cocos2dx_demo/Classes/MainScene.h
+cocos2d.h
+/home/peter/mygit/cocos2dx_demo/Classes/cocos2d.h
+GameLvlChoose.h
+/home/peter/mygit/cocos2dx_demo/Classes/GameLvlChoose.h
 
 /usr/local/include/GLFW/glfw3.h
 stddef.h

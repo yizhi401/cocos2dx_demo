@@ -49,32 +49,9 @@ include CMakeFiles/MyGame.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MyGame.dir/flags.make
 
-CMakeFiles/MyGame.dir/proj.linux/main.cpp.o: CMakeFiles/MyGame.dir/flags.make
-CMakeFiles/MyGame.dir/proj.linux/main.cpp.o: proj.linux/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/mygit/cocos2dx_demo/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/proj.linux/main.cpp.o"
-	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/proj.linux/main.cpp.o -c /home/peter/mygit/cocos2dx_demo/proj.linux/main.cpp
-
-CMakeFiles/MyGame.dir/proj.linux/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/proj.linux/main.cpp.i"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/peter/mygit/cocos2dx_demo/proj.linux/main.cpp > CMakeFiles/MyGame.dir/proj.linux/main.cpp.i
-
-CMakeFiles/MyGame.dir/proj.linux/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/proj.linux/main.cpp.s"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/peter/mygit/cocos2dx_demo/proj.linux/main.cpp -o CMakeFiles/MyGame.dir/proj.linux/main.cpp.s
-
-CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.requires:
-.PHONY : CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.requires
-
-CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.provides: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.provides.build
-.PHONY : CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.provides
-
-CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.provides.build: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o
-
 CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: CMakeFiles/MyGame.dir/flags.make
 CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o: Classes/AppDelegate.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/mygit/cocos2dx_demo/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/mygit/cocos2dx_demo/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o -c /home/peter/mygit/cocos2dx_demo/Classes/AppDelegate.cpp
 
@@ -97,7 +74,7 @@ CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o.provides.build: CMakeFiles/MyGam
 
 CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o: CMakeFiles/MyGame.dir/flags.make
 CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o: Classes/HelloWorldScene.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/mygit/cocos2dx_demo/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/mygit/cocos2dx_demo/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o"
 	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o -c /home/peter/mygit/cocos2dx_demo/Classes/HelloWorldScene.cpp
 
@@ -118,18 +95,91 @@ CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o.provides: CMakeFiles/MyGame.
 
 CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o
 
+CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o: Classes/MainScene.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/mygit/cocos2dx_demo/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o -c /home/peter/mygit/cocos2dx_demo/Classes/MainScene.cpp
+
+CMakeFiles/MyGame.dir/Classes/MainScene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/MainScene.cpp.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/peter/mygit/cocos2dx_demo/Classes/MainScene.cpp > CMakeFiles/MyGame.dir/Classes/MainScene.cpp.i
+
+CMakeFiles/MyGame.dir/Classes/MainScene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/MainScene.cpp.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/peter/mygit/cocos2dx_demo/Classes/MainScene.cpp -o CMakeFiles/MyGame.dir/Classes/MainScene.cpp.s
+
+CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o.requires:
+.PHONY : CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o.requires
+
+CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o.provides
+
+CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o
+
+CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o: Classes/GameLvlChoose.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/mygit/cocos2dx_demo/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o -c /home/peter/mygit/cocos2dx_demo/Classes/GameLvlChoose.cpp
+
+CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/peter/mygit/cocos2dx_demo/Classes/GameLvlChoose.cpp > CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.i
+
+CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/peter/mygit/cocos2dx_demo/Classes/GameLvlChoose.cpp -o CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.s
+
+CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o.requires:
+.PHONY : CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o.requires
+
+CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o.provides: CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o.provides
+
+CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o.provides.build: CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o
+
+CMakeFiles/MyGame.dir/proj.linux/main.cpp.o: CMakeFiles/MyGame.dir/flags.make
+CMakeFiles/MyGame.dir/proj.linux/main.cpp.o: proj.linux/main.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/peter/mygit/cocos2dx_demo/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/MyGame.dir/proj.linux/main.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/MyGame.dir/proj.linux/main.cpp.o -c /home/peter/mygit/cocos2dx_demo/proj.linux/main.cpp
+
+CMakeFiles/MyGame.dir/proj.linux/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyGame.dir/proj.linux/main.cpp.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/peter/mygit/cocos2dx_demo/proj.linux/main.cpp > CMakeFiles/MyGame.dir/proj.linux/main.cpp.i
+
+CMakeFiles/MyGame.dir/proj.linux/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyGame.dir/proj.linux/main.cpp.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/peter/mygit/cocos2dx_demo/proj.linux/main.cpp -o CMakeFiles/MyGame.dir/proj.linux/main.cpp.s
+
+CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.requires:
+.PHONY : CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.requires
+
+CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.provides: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MyGame.dir/build.make CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.provides.build
+.PHONY : CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.provides
+
+CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.provides.build: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o
+
 # Object files for target MyGame
 MyGame_OBJECTS = \
-"CMakeFiles/MyGame.dir/proj.linux/main.cpp.o" \
 "CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o" \
-"CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o"
+"CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o" \
+"CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o" \
+"CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o" \
+"CMakeFiles/MyGame.dir/proj.linux/main.cpp.o"
 
 # External object files for target MyGame
 MyGame_EXTERNAL_OBJECTS =
 
-bin/MyGame: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o
+bin/MyGame: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o
 bin/MyGame: CMakeFiles/MyGame.dir/build.make
 bin/MyGame: lib/libcocos2d.a
 bin/MyGame: lib/libbox2d.a
@@ -144,9 +194,11 @@ bin/MyGame: CMakeFiles/MyGame.dir/link.txt
 CMakeFiles/MyGame.dir/build: bin/MyGame
 .PHONY : CMakeFiles/MyGame.dir/build
 
-CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/AppDelegate.cpp.o.requires
 CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/HelloWorldScene.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/MainScene.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/Classes/GameLvlChoose.cpp.o.requires
+CMakeFiles/MyGame.dir/requires: CMakeFiles/MyGame.dir/proj.linux/main.cpp.o.requires
 .PHONY : CMakeFiles/MyGame.dir/requires
 
 CMakeFiles/MyGame.dir/clean:
