@@ -6,19 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/peter/mygit/cocos2dx_demo/Classes/GameLvlChoose.h
+/home/peter/mygit/cocos2dx_demo/Classes/CoordinateScene.h
 cocos2d.h
 /home/peter/mygit/cocos2dx_demo/Classes/cocos2d.h
 
-/home/peter/mygit/cocos2dx_demo/Classes/MainScene.cpp
-MainScene.h
-/home/peter/mygit/cocos2dx_demo/Classes/MainScene.h
-
-/home/peter/mygit/cocos2dx_demo/Classes/MainScene.h
-cocos2d.h
-/home/peter/mygit/cocos2dx_demo/Classes/cocos2d.h
+/home/peter/mygit/cocos2dx_demo/Classes/GameLvlChoose.cpp
 GameLvlChoose.h
 /home/peter/mygit/cocos2dx_demo/Classes/GameLvlChoose.h
+MarioScene.h
+/home/peter/mygit/cocos2dx_demo/Classes/MarioScene.h
+CoordinateScene.h
+/home/peter/mygit/cocos2dx_demo/Classes/CoordinateScene.h
+
+/home/peter/mygit/cocos2dx_demo/Classes/GameLvlChoose.h
+cocos2d.h
+/home/peter/mygit/cocos2dx_demo/Classes/cocos2d.h
+
+/home/peter/mygit/cocos2dx_demo/Classes/MarioScene.h
+cocos2d.h
+/home/peter/mygit/cocos2dx_demo/Classes/cocos2d.h
 
 /usr/local/include/GLFW/glfw3.h
 stddef.h

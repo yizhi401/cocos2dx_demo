@@ -42,18 +42,18 @@ void MainScene::chooseMenu(){
     Dictionary* dic = Dictionary::createWithContentsOfFile("res/String_CN.xml");
     String* gameName = (String*) dic-> objectForKey("game_name");
     CCLabelTTF* pLabel = CCLabelTTF::create(gameName->getCString(),"Marker Felt",60);
-    pLabel->setPosition(ccp(visibleSize.width/2,visibleSize.height - 60));
+    pLabel->setPosition(Vec2(visibleSize.width/2,visibleSize.height - 60));
     this -> addChild(pLabel);
     
     String* startGame = (String*) dic-> objectForKey("start_game");
     CCLabelTTF* startGameLabel = CCLabelTTF::create(startGame->getCString(),"Marker Felt",20);
-    startGameLabel -> setPosition(ccp(70,30));
+    startGameLabel -> setPosition(Vec2(70,30));
     auto startItem = MenuItemImage::create(norImg,lightImg,CC_CALLBACK_1(MainScene::startGame,this));
     startItem->addChild(startGameLabel);
     
     String* quitGame = (String*) dic-> objectForKey("quit_game");
     CCLabelTTF* quitGameLabel = CCLabelTTF::create(quitGame->getCString(),"Marker Felt",20);
-    quitGameLabel -> setPosition(ccp(70,30));
+    quitGameLabel -> setPosition(Vec2(70,30));
     auto editorItem = MenuItemImage::create(norImg,lightImg,CC_CALLBACK_1(MainScene::editorScene,this));
     editorItem->addChild(quitGameLabel);
     
@@ -61,7 +61,7 @@ void MainScene::chooseMenu(){
     
     
     menu->alignItemsVerticallyWithPadding(20);
-    menu->setPosition(ccp(visibleSize.width/2,visibleSize.height/2));
+    menu->setPosition(Vec2(visibleSize.width/2,visibleSize.height/2));
     
     this->addChild(menu);
     

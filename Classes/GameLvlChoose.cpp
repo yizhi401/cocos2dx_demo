@@ -1,4 +1,6 @@
 #include "GameLvlChoose.h"
+#include "MarioScene.h"
+#include "CoordinateScene.h"
 
 GameLvlChoose::GameLvlChoose(){
     _level = 1;
@@ -38,7 +40,7 @@ bool GameLvlChoose::init(){
 
     auto menu = CCMenu::create(level_1_Item,level_2_Item,level_3_Item,nullptr);
     menu -> alignItemsHorizontallyWithPadding(20);
-    menu -> setPosition(ccp(visibleSize.width/2,visibleSize.height/2));
+    menu -> setPosition(Vec2(visibleSize.width/2,visibleSize.height/2));
 
     this -> addChild(menu);
 
@@ -50,24 +52,26 @@ Label* GameLvlChoose::createLevelLab(const char* sLvl){
 
     auto level_lab = Label::create(sLvl,"Arial",60);
     level_lab -> setColor(Color3B::RED);
-    level_lab -> setPosition(ccp(60,60));
+    level_lab -> setPosition(Vec2(60,60));
 
     return level_lab;
 }
 
-void GameLvlChoose::level_1(CCObject* pSender){
+void GameLvlChoose::level_1(Ref* pSender){
 
     CCLOG("111111");
     _level = 1;
+    Director::getInstance() -> pushScene(MarioScene::createScene());
 }
 
-void GameLvlChoose::level_2(CCObject* pSender){
+void GameLvlChoose::level_2(Ref* pSender){
 
     CCLOG("222222");
     _level = 2; 
+    Director::getInstance() -> pushScene(CoordinateScene::createScene());
 }
 
-void GameLvlChoose::level_3(CCObject* pSender){
+void GameLvlChoose::level_3(Ref* pSender){
 
     CCLOG("333333");
     _level = 3;
